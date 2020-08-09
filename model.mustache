@@ -35,8 +35,8 @@ namespace {{modelPackage}}
         /// <summary>
         /// {{^description}}Gets or Sets {{{name}}}{{/description}}{{#description}}{{description}}{{/description}}
         /// </summary>{{#description}}
-        /// <value>{{description}}</value>{{/description}}{{#vendorExtensions.x-entity-key}}
-        [Key]{{/vendorExtensions.x-entity-key}}{{#required}}
+        /// <value>{{description}}</value>{{/description}}{{#vendorExtensions.x-csharp-entityframework-key}}
+        [Key]{{/vendorExtensions.x-csharp-entityframework-key}}{{#required}}
         [Required]{{/required}}{{#pattern}}
         [RegularExpression("{{{pattern}}}")]{{/pattern}}{{#minLength}}{{#maxLength}}
         [StringLength({{maxLength}}, MinimumLength={{minLength}})]{{/maxLength}}{{/minLength}}{{#minLength}}{{^maxLength}}
